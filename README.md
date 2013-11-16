@@ -1,8 +1,3 @@
-#webrtc.io-demo
-==============
-
-You can have a look at the [demo](http://webrtc.dennis.is/)
-
 ##Instructions on how to setup the demo:
 
 Run in your terminal
