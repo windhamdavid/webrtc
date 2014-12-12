@@ -1,14 +1,25 @@
-<html>
-  <head>
-    <title>Daveo (chat)</title>
-    <link type="text/css" href="/style.css" rel="stylesheet"></link>
-    <script src="/webrtc.io.js"></script>
-  </head>
-  <body onload="init()">
-    <div id="videos">
-      <video id="you" class="flip" autoplay width="263" height="200" style="position: absolute; left: 0px; bottom: 0px;"></video>
-    </div>
-	<p style="color:white;font-family:helvetica;float:right;margin:0 10px 0 0"><small>fyi: you'll get a feedback loop if your volume be too high</small></p>
-    <script src="/script.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>David</title>
+<link type="text/css" href="/style.css" rel="stylesheet"></link>
+<script src="/webrtc.io.js"></script>
+</head>
+<body onload="init()">
+	<div id="videos">
+		<video muted="muted" id="you" class="flip" autoplay width="263" height="200" style="position: absolute; left: 0px; bottom: 0px;"></video>
+	</div>
+	<div id="chatbox">
+		<div id="messages"></div>
+		<input id="chatinput" type="text" placeholder="Message:"/>
+	</div>
+	<div class="buttonBox">
+		<div id="hideShowMessages" class="button chat">chat</div>
+		<div id="newRoom" class="button room">&clubs;</div>
+	</div>
+<script src="/script.js"></script>
+</body>
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "MultiWebRTC",
-  "description": "Example of multi user webrtc",
-  "version": "0.0.2-1",
+  "name": "webrtc",
+  "description": "webrtc",
+  "version": "0.0.1",
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -10,24 +10,5 @@
     "webrtc.io-client": "latest",
     "express": "3.1.0",
     "ws": "latest"
-  },
-  "subdomain": "MultiWebRTC",
-  "scripts": {
-    "start": "example/server.js"
-  },
-  "author": "Ben Brittain",
-  "contributors": [
-    {
-      "name": "Ben Brittain",
-      "email": "ben@brittain.org"
-    },
-    {
-      "name": "Dennis Mårtensson",
-      "email": "me@dennis.is"
-    },
-    {
-      "name": "David Peter",
-      "email": "david.a.peter@gmail.com"
-    }
-  ]
+  }
 }

@@ -60,9 +60,9 @@ function addToChat(msg, color) {
   var messages = document.getElementById('messages');
   msg = sanitize(msg);
   if(color) {
-    msg = '<span style="color: ' + color + '; padding-left: 15px">' + msg + '</span>';
+    msg = '<span style="color: ' + color + '; padding-left:5px">' + msg + '</span>';
   } else {
-    msg = '<strong style="padding-left: 15px">' + msg + '</strong>';
+    msg = '<span>' + msg + '</span>';
   }
   messages.innerHTML = messages.innerHTML + msg + '<br>';
   messages.scrollTop = 10000;
@@ -72,14 +72,7 @@ function sanitize(msg) {
   return msg.replace(/</g, '&lt;');
 }
 
-function initFullScreen() {
-  var button = document.getElementById("fullscreen");
-  button.addEventListener('click', function(event) {
-    var elem = document.getElementById("videos");
-    //show full screen
-    elem.webkitRequestFullScreen();
-  });
-}
+
 
 function initNewRoom() {
   var button = document.getElementById("newRoom");
@@ -187,7 +180,7 @@ function init() {
       //subdivideVideos();
     });
   } else {
-    alert('Your browser is not supported or you have to turn on flags. In chrome you go to chrome://flags and turn on Enable PeerConnection remember to restart chrome');
+    alert('Your browser is not supported');
   }
 
 
@@ -206,7 +199,7 @@ function init() {
     console.log('remove ' + data);
     removeVideo(data);
   });
-  initFullScreen();
+
   initNewRoom();
   initChat();
 }
