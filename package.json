@@ -2,9 +2,12 @@
   "name": "daveo-webrtc",
   "description": "daveo webrtc",
   "main": "site/server.js",
+  "scripts": {
+	  "start": "node site/server.js"
+  }
   "version": "0.0.2",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.10.x"
   },
   "dependencies": {
     "webrtc.io": "latest",
