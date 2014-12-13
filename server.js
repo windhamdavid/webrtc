@@ -2,7 +2,7 @@ var app = require('express')();
 var server = require('http').createServer(app);
 var webRTC = require('webrtc.io').listen(server);
 
-var port = process.env.PORT || 8881;
+var port = process.env.PORT || 80;
 server.listen(port);
 
 app.get('/', function(req, res) {
