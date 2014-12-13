@@ -1,9 +1,9 @@
 {
   "name": "daveo-webrtc",
   "description": "daveo webrtc",
-  "main": "site/server.js",
+  "main": "server.js",
   "scripts": {
-	  "start": "node site/server.js"
+	  "start": "node server.js"
   },
   "version": "0.0.2",
   "engines": {
