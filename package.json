@@ -4,7 +4,7 @@
   "main": "site/server.js",
   "scripts": {
 	  "start": "node site/server.js"
-  }
+  },
   "version": "0.0.2",
   "engines": {
     "node": ">= 0.10.x"
