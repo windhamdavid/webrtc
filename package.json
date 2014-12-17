@@ -12,6 +12,7 @@
     "webrtc.io": "latest",
     "webrtc.io-client": "latest",
     "express": "latest",
-    "ws": "latest"
+    "ws": "latest",
+	"twilio": "latest"
   }
 }

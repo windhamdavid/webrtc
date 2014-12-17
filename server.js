@@ -2,6 +2,12 @@ var app = require('express')();
 var server = require('http').createServer(app);
 var webRTC = require('webrtc.io').listen(server);
 
+app.all('/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 var port = process.env.PORT || 8080;
 server.listen(port);
 
