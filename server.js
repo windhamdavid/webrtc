@@ -23,6 +23,11 @@ app.get('/script.js', function(req, res) {
 app.get('/webrtc.io.js', function(req, res) {
 	res.sendFile(__dirname + '/webrtc.io.js');
 });
+app.get('/status', function(req, res) {
+	var c = 1;
+	if (c == 1) {res.json({'online': 'yes'});}
+	else {res.json({'online': 'no'});}
+});
 
 webRTC.rtc.on('chat_msg', function(data, socket) {
 var roomList = webRTC.rtc.rooms[data.room] || [];
