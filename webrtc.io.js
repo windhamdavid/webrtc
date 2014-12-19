@@ -357,7 +357,7 @@ if (navigator.webkitGetUserMedia) {
         onFail();
       });
     } else {
-      alert('webRTC is not yet supported in this browser.');
+      alert('Your Browser does not support WebRTC (Video Chat). Try Firefox, Chrome, or Opera');
     }
   };
 
