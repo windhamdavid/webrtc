@@ -33,7 +33,7 @@ server.on('connection', function (socket){
 });
 
 app.get('/status', function(req, res) {
-	if (folks >= 2) {res.json({'online': 'yes'});}
+	if (folks >= 1) {res.json({'online': 'yes'});}
 	else {res.json({'online': 'no'});}
 });
 
