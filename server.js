@@ -24,15 +24,12 @@ app.get('/webrtc.io.js', function(req, res) {
 	res.sendFile(__dirname + '/webrtc.io.js');
 });
 
-
 var folks = 0;
 server.on('connection', function (socket){
     folks++;
     socket.on('close', function () {
         folks--;
-		console.log(folks);
     });
-	console.log(folks);
 });
 
 app.get('/status', function(req, res) {
